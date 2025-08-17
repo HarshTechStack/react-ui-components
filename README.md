@@ -162,5 +162,3 @@ GitHub: [https://github.com/HarshTechStack](https://github.com/HarshTechStack)
 ## License
 
 This project is for educational purposes and assignment submission only.
-
-```
