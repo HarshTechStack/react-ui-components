@@ -141,7 +141,7 @@ Open [http://localhost:6006](http://localhost:6006) to view all component storie
 ## Deployment
 
 Storybook is deployed using Chromatic/Vercel for live component preview:
-Storybook Preview Link (replace with actual URL)
+Storybook Preview Link (https://storybook-static-c06zhv405-harshtechstacks-projects.vercel.app)
 
 ---
 
