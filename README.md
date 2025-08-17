@@ -97,20 +97,20 @@ interface DataTableProps<T> {
 
 ## Setup Instructions
 
-**Clone the repository:**
+**Clone the repository**
 
 ```bash
 git clone <your-repo-url>
 cd react-ui-components
 ```
 
-**Install dependencies:**
+**Install dependencies**
 
 ```bash
 npm install
 ```
 
-**Run the app:**
+**Run the app**
 
 ```bash
 npm start
@@ -118,7 +118,7 @@ npm start
 
 Open [http://localhost:3000](http://localhost:3000) to view the demo.
 
-**Run Storybook:**
+**Run Storybook**
 
 ```bash
 npm run storybook
@@ -130,7 +130,7 @@ Open [http://localhost:6006](http://localhost:6006) to view all component storie
 
 ## Approach & Implementation
 
-* **Reusable Components:** Both `InputField` and `DataTable` use TypeScript generics and props for maximum flexibility.
+* **Reusable Components:** Both InputField and DataTable use TypeScript generics and props for maximum flexibility.
 * **Styling:** TailwindCSS is used for clean, modern, and responsive UI.
 * **Accessibility:** ARIA labels and roles are applied for screen readers.
 * **Storybook:** Each component has its own story with multiple examples covering default, error, loading, disabled, and interactive states.
@@ -162,3 +162,6 @@ GitHub: [https://github.com/HarshTechStack](https://github.com/HarshTechStack)
 ## License
 
 This project is for educational purposes and assignment submission only.
+
+```
+```
