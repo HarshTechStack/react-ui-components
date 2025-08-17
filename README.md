@@ -1,46 +1,150 @@
-# Getting Started with Create React App
+# React Component Development Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+This project contains two reusable React UI components built using **React**, **TypeScript**, **TailwindCSS**, and **Storybook**. The focus is on creating scalable, accessible, and well-documented components.
 
-## Available Scripts
+**Components included:**
+1. **InputField** – A flexible input component with validation and interactive states.  
+2. **DataTable** – A dynamic table component with sorting, row selection, loading, and empty states.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Tech Stack
+- React 18  
+- TypeScript  
+- TailwindCSS for styling  
+- Storybook 9 for component documentation  
+- Node.js 20 (development environment)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Component 1: InputField
 
-### `npm test`
+**Description:**  
+A highly customizable input component that supports multiple states and variants.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Features:**
+- Text input with label, placeholder, and helper text  
+- Validation states with error messages  
+- Disabled and loading states  
+- Visual variants: `filled`, `outlined`, `ghost`  
+- Sizes: `sm`, `md`, `lg`  
+- Optional: clear button and password toggle  
+- Light and dark theme support
 
-### `npm run build`
+**Props:**
+```ts
+interface InputFieldProps {
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  label?: string;
+  placeholder?: string;
+  helperText?: string;
+  errorMessage?: string;
+  disabled?: boolean;
+  invalid?: boolean;
+  variant?: 'filled' | 'outlined' | 'ghost';
+  size?: 'sm' | 'md' | 'lg';
+  clearable?: boolean;
+  type?: 'text' | 'password' | 'email';
+}
+Storybook Preview:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Component 2: DataTable
+Description:
+A reusable and type-safe table component for displaying tabular data with advanced features.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Features:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Displays rows and columns dynamically based on props
 
-### `npm run eject`
+Column sorting (ascending/descending)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Row selection (single/multiple)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Loading state
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Empty state
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Fully responsive
 
-## Learn More
+Accessible (ARIA attributes included)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Props:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ts
+Copy
+Edit
+interface Column<T> {
+  key: string;
+  title: string;
+  dataIndex: keyof T;
+  sortable?: boolean;
+}
+
+interface DataTableProps<T> {
+  data: T[];
+  columns: Column<T>[];
+  loading?: boolean;
+  selectable?: boolean;
+  onRowSelect?: (selectedRows: T[]) => void;
+}
+Storybook Preview:
+
+Setup Instructions
+Clone the repository
+
+bash
+Copy
+Edit
+git clone <your-repo-url>
+cd my-components-new
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+Run the app
+
+bash
+Copy
+Edit
+npm start
+Open http://localhost:3000 to view the demo.
+
+Run Storybook
+
+bash
+Copy
+Edit
+npm run storybook
+Open http://localhost:6006 to view all component stories.
+
+Approach & Implementation
+Reusable Components: Both InputField and DataTable use TypeScript generics and props for maximum flexibility.
+
+Styling: TailwindCSS is used for clean, modern, and responsive UI.
+
+Accessibility: ARIA labels and roles are applied for screen readers.
+
+Storybook: Each component has its own story with multiple examples covering default, error, loading, disabled, and interactive states.
+
+Testing: Basic type safety and prop validation with TypeScript; interactive testing via Storybook.
+
+Deployment
+Storybook is deployed using Chromatic/Vercel for live component preview:
+Storybook Preview Link (replace with actual URL)
+
+Screenshots / GIFs (Optional)
+Add your interactive component screenshots or GIFs here to showcase features.
+
+Author
+Vivek Harsh
+
+Email: vivekharsh.work@gmail.com
+
+GitHub:https://github.com/HarshTechStack
+
+License
+This project is for educational purposes and assignment submission only. shouli paste this
