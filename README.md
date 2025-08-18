@@ -91,7 +91,7 @@ interface DataTableProps<T> {
 ```
 
 **Storybook Preview:**
-(Replace with your Storybook deployment link)
+(https://storybook-static-c06zhv405-harshtechstacks-projects.vercel.app/?path=/story/components-datatable--default)
 
 ---
 
@@ -141,13 +141,26 @@ Open [http://localhost:6006](http://localhost:6006) to view all component storie
 ## Deployment
 
 Storybook is deployed using Chromatic/Vercel for live component preview:
-Storybook Preview Link (https://storybook-static-c06zhv405-harshtechstacks-projects.vercel.app)
+vercel deployed Link (https://vercel.com/harshtechstacks-projects/storybook-static)
 
 ---
 
-## Screenshots / GIFs (Optional)
+## Screenshots
 
-Add your interactive component screenshots or GIFs here to showcase features.
+### InputField States
+![InputField Default](./src/stories/assets/screenshots/screenshots1.png)
+![InputField Error](./src/stories/assets/screenshots/screenshots2.png)
+![InputField Disabled](./src/stories/assets/screenshots/screenshots3.png)
+
+### DataTable States
+![DataTable Default](./src/stories/assets/screenshots/screenshots4.png)
+![DataTable Sorting](./src/stories/assets/screenshots/screenshots5.png)
+![DataTable Selection](./src/stories/assets/screenshots/screenshots6.png)
+![DataTable Loading](./src/stories/assets/screenshots/screenshots7.png)
+![DataTable Empty](./src/stories/assets/screenshots/screenshots8.png)
+
+
+
 
 ---
 
